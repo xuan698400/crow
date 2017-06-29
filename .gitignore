@@ -1,0 +1,26 @@
+# OSX temp files
+.DS_store
+*.swp
+# Java temp files
+*.class
+
+target/
+*target/
+
+*.log
+*.log.*
+
+# IntelliJ project files
+*.idea
+*.iml
+*.ipr
+*.iws
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.project
+*.classpath
+*.settings
+*.MF
