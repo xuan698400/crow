@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>CrowLib测试页面</title>
+
+    <script type="text/javascript" src="jquery.1.11.2.min.js"></script>
+    <script type="text/javascript" src="crowlib.js"></script>
+</head>
+<body>
+    <ul>
+        <li>
+            获取token接口
+            <a href="#" onclick="getToken();return false;">获取token接口</a>
+        </li>
+    </ul>
+
+    <script>
+        function getToken(){
+            CWLib.api.getToken({
+                userId : 'xuan',
+                userName : '徐安',
+                userLogo : 'xxxxx',
+                success : function(token){alert(token)},
+                fail : function(bizCode, message){alert(message)}
+            });
+        }
+    </script>
+</body>
+</html>

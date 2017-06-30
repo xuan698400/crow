@@ -18,7 +18,7 @@ CREATE TABLE `app` (
 
 CREATE TABLE `app_user` (
   `id` bigint(32) NOT NULL AUTO_INCREMENT COMMENT 'id',
-  `app_id` char(32) NOT NULL COMMENT 'app_id',
+  `app_id` varchar(32) NOT NULL COMMENT 'app_id',
   `user_id` varchar(32) NOT NULL COMMENT '业务层用户id',
   `user_name` varchar(512) DEFAULT NULL COMMENT '业务层用户名字',
   `user_logo` varchar(2048) DEFAULT NULL COMMENT '业务层用户头像url',
@@ -34,7 +34,7 @@ CREATE TABLE `app_user` (
 
 CREATE TABLE `app_message` (
   `id` bigint(32) NOT NULL AUTO_INCREMENT COMMENT 'id',
-  `app_id` char(32) NOT NULL COMMENT 'app_id',
+  `app_id` varchar(32) NOT NULL COMMENT 'app_id',
   `message` varchar(2048) NOT NULL COMMENT '消息内容JSON格式',
   `is_deleted` TINYINT(1) NOT NULL DEFAULT 0,
   `editor` char(32) NOT NULL,
@@ -46,7 +46,7 @@ CREATE TABLE `app_message` (
 
 CREATE TABLE `app_user_message` (
   `id` bigint(32) NOT NULL AUTO_INCREMENT COMMENT 'id',
-  `app_id` char(32) NOT NULL COMMENT 'app_id',
+  `app_id` varchar(32) NOT NULL COMMENT 'app_id',
   `owner_app_user_id` bigint(32) NOT NULL COMMENT '消息拥有者',
   `from_id` bigint(32) NOT NULL COMMENT '发送对象',
   `from_type` bigint(32) NOT NULL COMMENT '发送对象类型:ME|OTHER|SYSTEM',

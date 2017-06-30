@@ -23,6 +23,11 @@
                 <artifactId>crow-common</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
+            <dependency>
+                <groupId>com.xuan.crow</groupId>
+                <artifactId>crow-biz</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
             <!-- 继承Spring + MyBatis + Druid + 分页的插件 -->
             <dependency>
                 <groupId>mysql</groupId>

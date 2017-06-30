@@ -8,8 +8,10 @@ import java.text.MessageFormat;
  * Created by xuan on 17/6/21.
  */
 public enum BaseErrorEnum {
-    PARAM_IS_NULL("ER001", "参数NULL错误.参数名:{0}"),
-    DB_OPERATE_ERROR("ER002", "更新数据库错误");
+    UNKNOWN("ER000", "未知错误.e={0}"),
+    PARAM_IS_NULL("ER001", "参数NULL错误.参数名={0}"),
+    DB_OPERATE_ERROR("ER002", "更新数据库错误"),
+    PARAM_VALUE_ERROR("ER003", "参数值错误.参数:{0}={1}");
 
     private String bizCode;
     private String errorMsg;

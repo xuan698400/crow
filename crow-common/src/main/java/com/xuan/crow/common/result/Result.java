@@ -30,7 +30,7 @@ public class Result extends BaseResult {
         if (null == resultValue) {
             resultValue = new JSONObject();
         }
-        result.setResult(result);
+        result.setResult(resultValue);
         result.setBizCode(bizCode);
         return result;
     }
